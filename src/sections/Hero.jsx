@@ -6,6 +6,8 @@ import CanvasLoader from "../components/CanvasLoader";
 import { Leva, useControls } from "leva";
 import { useMediaQuery } from "react-responsive";
 import { calculateSizes } from "../constants";
+import Target from "../components/Target";
+import ReactLogo from "../components/ReactLogo";
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -95,6 +97,11 @@ const Hero = () => {
               //   controls.rotationZ,
               // ]}
             />
+
+            <group>
+              <Target position={[-10, 0, -3]} />
+              <ReactLogo position={[0, 0, -3]} />
+            </group>
 
             <ambientLight intensity={7} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
