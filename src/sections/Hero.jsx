@@ -8,6 +8,10 @@ import { useMediaQuery } from "react-responsive";
 import { calculateSizes } from "../constants";
 import Target from "../components/Target";
 import ReactLogo from "../components/ReactLogo";
+import Cube from "../components/Cube";
+import Diamond from "../components/Diamond";
+import { OrbitControls } from "@react-three/drei";
+import World from "../components/World";
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -67,17 +71,21 @@ const Hero = () => {
 
       <div className="w-full h-full absolute inset-0">
         {/* <Leva /> */}
-        <Canvas className="w-full h-full">
+        <Canvas
+          className="w-full h-full"
+          camera={{ position: [-5, 0.5, 5], fov: 45 }}
+        >
           <Suspense fallback={<CanvasLoader />}>
-            <PerspectiveCamera makeDefault position={[0, 10, 20]} />
+            <PerspectiveCamera makeDefault position={[0, 2, 20]} />
             <HackerRoom
-              scale={isTablet ? 8.7 : isMobile ? 8.7 : 13.6}
+              scale={isTablet ? 8.7 : isMobile ? 8.7 : 5.6}
+              // scale={isTablet ? 8.7 : isMobile ? 8.7 : 13.6}
               position={
                 isTablet
                   ? [0, 6.1, -2.1]
                   : isMobile
                   ? [0, 6.1, -2.1]
-                  : [0, 2.5, -2.1]
+                  : [0, -8, -3.1]
               }
               rotation={[0, Math.PI, 0]}
 
@@ -99,12 +107,25 @@ const Hero = () => {
             />
 
             <group>
-              <Target position={[-10, 0, -3]} />
-              <ReactLogo position={[0, 0, -3]} />
+              <Target position={[-10, -2, -3]} />
+              <ReactLogo position={[0, 3, -3]} />
+              <Cube position={[10, 1, -3]} />
+              <Diamond
+                autoRotate
+                autoRotateSpeed={1}
+                minPolarAngle={0}
+                maxPolarAngle={Math.PI / 2}
+                rotation={[0, 0, 0.715]}
+                position={[-9.1, 1.8 + 0.5, 0]}
+              />
+              <World scale={0.0105} position={[0, -3, -3.1]} />
+
+              {/* <Stars saturation={0} count={400} speed={0.2} /> */}
             </group>
 
             <ambientLight intensity={7} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
+            <OrbitControls makeDefault />
           </Suspense>
         </Canvas>
       </div>
