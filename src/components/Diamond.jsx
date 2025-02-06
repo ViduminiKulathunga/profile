@@ -26,6 +26,7 @@ const Diamond = (props) => {
       duration: 28, // Adjust speed
       repeat: -1, // Infinite loop
       ease: "linear",
+      repeatDelay: 0.5,
     });
   }, []);
 

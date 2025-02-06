@@ -12,6 +12,8 @@ import Cube from "../components/Cube";
 import Diamond from "../components/Diamond";
 import { OrbitControls } from "@react-three/drei";
 import World from "../components/World";
+import HeroCamera from "../components/HeroCamera";
+import Button from "../components/Button";
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -76,7 +78,8 @@ const Hero = () => {
           camera={{ position: [-5, 0.5, 5], fov: 45 }}
         >
           <Suspense fallback={<CanvasLoader />}>
-            <PerspectiveCamera makeDefault position={[0, 2, 20]} />
+            <PerspectiveCamera makeDefault position={[0, 1.5, 20]} />
+            {/* <HeroCamera> */}
             <HackerRoom
               scale={isTablet ? 8.7 : isMobile ? 8.7 : 5.6}
               // scale={isTablet ? 8.7 : isMobile ? 8.7 : 13.6}
@@ -105,6 +108,7 @@ const Hero = () => {
               //   controls.rotationZ,
               // ]}
             />
+            {/* </HeroCamera> */}
 
             <group>
               <Target position={[-10, -2, -3]} />
@@ -125,9 +129,19 @@ const Hero = () => {
 
             <ambientLight intensity={7} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
-            <OrbitControls makeDefault />
+            {!isMobile ? <OrbitControls makeDefault /> : <></>}
           </Suspense>
         </Canvas>
+      </div>
+
+      <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
+        <a href="#contact">
+          <Button
+            name="Let's work together"
+            isBeam
+            containerClass="sm:w-fit w-full sm:min-w-96"
+          />
+        </a>
       </div>
     </section>
   );

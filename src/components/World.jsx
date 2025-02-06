@@ -13,6 +13,7 @@ const World = (props) => {
       duration: 73, // Adjust speed
       repeat: 0, // Infinite loop
       ease: "linear",
+      repeatDelay: 0.5,
     });
   }, []);
 
