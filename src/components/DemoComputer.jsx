@@ -13,7 +13,7 @@ const DemoComputer = (props) => {
   const { actions } = useAnimations(animations, group);
 
   const txt = useVideoTexture(
-    props.texture ? props.texture : "/models/textures/project/project1.mp4"
+    props.texture ? props.texture : "/models/textures/project/1.mp4"
   );
 
   useEffect(() => {

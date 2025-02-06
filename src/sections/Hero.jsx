@@ -129,7 +129,7 @@ const Hero = () => {
 
             <ambientLight intensity={7} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
-            {!isMobile ? <OrbitControls makeDefault /> : <></>}
+            {!isMobile ? <OrbitControls enableZoom={false} /> : <></>}
           </Suspense>
         </Canvas>
       </div>
