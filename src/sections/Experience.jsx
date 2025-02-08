@@ -25,7 +25,7 @@ const WorkExperience = () => {
               <Suspense fallback={<CanvasLoader />}>
                 <Developer
                   position-y={-3}
-                  scale={3}
+                  scale={2.8}
                   animationName={animationName}
                 />
               </Suspense>
@@ -59,6 +59,20 @@ const WorkExperience = () => {
                     </p>
                     <p className="group-hover:text-white transition-all ease-in-out duration-500">
                       {item.title}
+                      {item?.extra ? (
+                        <span className="dark:text-sky-400">
+                          <a
+                            className="underline"
+                            href="https://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A1901610&dswid=9451"
+                            target="_blank"
+                          >
+                            <br />
+                            {item.extra}
+                          </a>
+                        </span>
+                      ) : (
+                        <></>
+                      )}
                     </p>
                   </div>
                 </div>

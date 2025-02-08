@@ -118,6 +118,7 @@ body {
 
   .work-content_logo {
     @apply rounded-3xl w-16 h-16 p-2 bg-black-600;
+    background-color: rgb(250, 250, 250);
   }
 
   .work-content_bar {

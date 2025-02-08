@@ -24,105 +24,31 @@ export const navLinks = [
 export const clientReviews = [
   {
     id: 1,
-    name: "Emily Johnson",
-    position: "Marketing Director at GreenLeaf",
-    img: "assets/review1.png",
+    name: "José Mairton Barros da Silva Júnior",
+    position: "Professor, Uppsala University",
+    img: "assets/jose1.jpg",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+      "I highly recommend Vidumini for any technical position. During the research time she demonstrated exceptional skills in implementing IoT-based localization systems and applying supervised ensemble machine learning techniques. Her ability to approach complex problems with innovative solutions and attention to detail has been impressive.",
   },
   {
     id: 2,
-    name: "Mark Rogers",
-    position: "Founder of TechGear Shop",
-    img: "assets/review2.png",
+    name: "Daniel Kinnstam",
+    position: "Manager at Northvolt",
+    img: "assets/daniel.jpeg",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.",
+      "Vidumini demonstrated exceptional technical skills, attention to detail, and a strong work ethic. Her ability to troubleshoot issues, improve production efficiency, and foster a collaborative team environment made her a valuable asset to our operations. She’s a true professional! Fantastic work.",
   },
 ];
 
 export const myProjects = [
   {
-    title: "Podcastr - AI Podcast Platform",
-    desc: "Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.",
+    title: "InfoIns",
+    desc: "InfoIns is a Insurance Software Solutions, Enterprise level modern and scalable application uses for 19 countries in the world, web-enabled end-to-end insurance software solution. The InfoIns suite of solutions enables insurers to tap into new markets, extend services to intermediaries such as agents, brokers and policyholders while increasing their profits.",
     subdesc:
-      "Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.",
-    href: "https://www.youtube.com/watch?v=zfAb95tJvZQ",
-    texture: "/models/textures/project/p1.mp4",
-    logo: "/assets/project-logo1.png",
-    logoStyle: {
-      backgroundColor: "#2A1816",
-      border: "0.2px solid #36201D",
-      boxShadow: "0px 0px 60px 0px #AA3C304D",
-    },
-    spotlight: "/assets/spotlight1.png",
-    tags: [
-      {
-        id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
-      },
-      {
-        id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
-      },
-      {
-        id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
-      },
-      {
-        id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
-      },
-    ],
-  },
-  {
-    title: "LiveDoc - Real-Time Google Docs Clone",
-    desc: "LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.",
-    subdesc:
-      "With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.",
-    href: "https://www.youtube.com/watch?v=y5vE8y_f_OM",
-    texture: "/models//textures/project/p2.mp4",
-    logo: "/assets/project-logo2.png",
-    logoStyle: {
-      backgroundColor: "#13202F",
-      border: "0.2px solid #17293E",
-      boxShadow: "0px 0px 60px 0px #2F6DB54D",
-    },
-    spotlight: "/assets/spotlight2.png",
-    tags: [
-      {
-        id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
-      },
-      {
-        id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
-      },
-      {
-        id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
-      },
-      {
-        id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
-      },
-    ],
-  },
-  {
-    title: "CarePulse - Health Management System",
-    desc: "An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.",
-    subdesc:
-      "With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.",
-    href: "https://www.youtube.com/watch?v=lEflo_sc82g",
-    texture: "/models//textures/project/p3.mp4",
-    logo: "/assets/project-logo3.png",
+      "JavaScript and TypeScript are used for front-end development, ensuring dynamic and interactive user interfaces, while React.js powers responsive and high-performance applications. On the back end, Node.js, RabbitMQ handles fast and scalable server-side operations, with GraphQL optimizing data fetching for more efficient API interactions. MongoDB and MySQL are employed for secure data storage, managing both structured and unstructured data. The system also uses REST APIs for seamless integration with third-party services, and is hosted on cloud platforms like AWS for enhanced scalability and security.",
+    href: "https://www.informaticsint.com/",
+    texture: "/models/textures/project/p5.mp4",
+    logo: "/assets/Informatics.svg",
     logoStyle: {
       backgroundColor: "#60f5a1",
       background:
@@ -139,29 +65,109 @@ export const myProjects = [
       },
       {
         id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
-      },
-      {
-        id: 3,
         name: "TypeScript",
         path: "/assets/typescript.png",
       },
       {
+        id: 3,
+        name: "NodeJS",
+        path: "assets/node.png",
+      },
+      {
         id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
+        name: "GraphQL",
+        path: "assets/GraphQL.png",
+      },
+      {
+        id: 5,
+        name: "TailwindCSS",
+        path: "assets/tailwindcss.png",
       },
     ],
   },
   {
-    title: "Horizon - Online Banking Platform",
-    desc: "Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.",
+    title: "Cinnamon Hotels & Resorts",
+    desc: "Cinnamon Hotels & Resorts system blends tradition with elegance across Sri Lanka and the Maldives, enhancing operations across 16 hotels and resorts, providing a seamless experience for guests and efficient management for staff.",
     subdesc:
-      "Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.",
-    href: "https://www.youtube.com/watch?v=PuOVqP_cjkE",
-    texture: "/models//textures/project/p4.mp4",
-    logo: "/assets/project-logo4.png",
+      "Built as a unique web system and mobile app with Javascript, TypeScript, Java, Sass, MySQL, System is designed for optimal performance and scalability.",
+    href: "https://www.cinnamonhotels.com",
+    texture: "/models/textures/project/p3.mp4",
+    logo: "/assets/cinnamonhotels.jpeg",
+    logoStyle: {
+      backgroundColor: "#2A1816",
+      border: "0.2px solid #36201D",
+      boxShadow: "0px 0px 60px 0px #AA3C304D",
+    },
+    spotlight: "/assets/spotlight1.png",
+    tags: [
+      {
+        id: 1,
+        name: "Javascript",
+        path: "/assets/js.png",
+      },
+      {
+        id: 2,
+        name: "TypeScript",
+        path: "/assets/typescript.png",
+      },
+      {
+        id: 3,
+        name: "Java",
+        path: "assets/java.png",
+      },
+
+      {
+        id: 4,
+        name: "MySQL",
+        path: "/assets/MySQL.png",
+      },
+    ],
+  },
+  {
+    title: "Dilmah Ceylon Tea",
+    desc: "Dilmah Ceylon Tea, a renowned Sri Lankan tea brand. The Dilmah company has developed an e-commerce platform and website to enable customers worldwide to purchase premium Ceylon tea directly online.",
+    subdesc:
+      "Dilmah's Content Management System enables the team to update content and optimize SEO for better visibility. The website features a WooCommerce online ordering and payment processing system. It is mobile-responsive, using HTML5, CSS3, JavaScript, TypeScript, and Node.js, with Google Cloud-based hosting ensuring reliable performance and scalability.",
+    href: "https://www.dilmahtea.com",
+    texture: "/models/textures/project/p2.mp4",
+    logo: "/assets/dilmah.jpeg",
+    logoStyle: {
+      backgroundColor: "#13202F",
+      border: "0.2px solid #17293E",
+      boxShadow: "0px 0px 60px 0px #2F6DB54D",
+    },
+    spotlight: "/assets/spotlight2.png",
+    tags: [
+      {
+        id: 1,
+        name: "Javascript",
+        path: "/assets/js.png",
+      },
+      {
+        id: 2,
+        name: "TypeScript",
+        path: "/assets/typescript.png",
+      },
+      {
+        id: 3,
+        name: "NodeJS",
+        path: "assets/node.png",
+      },
+      {
+        id: 4,
+        name: "Google Cloud",
+        path: "/assets/googleCloud.jpg",
+      },
+    ],
+  },
+  {
+    title: "Wellbee",
+    desc: "Wellbee is a web and mobile application designed to assist individuals in need of cognitive support with everyday planning, helping them manage daily tasks and routines efficiently.",
+    subdesc:
+      "Wellbee front end is developed with React.js and React Native, providing a responsive and interactive interface for both web and mobile applications. TypeScript enhances code reliability and maintainability, while MobX manages state efficiently for a smooth user experience. On the back end, Node.js and Express.js handle server-side logic, ensuring fast and scalable performance. The system integrates with Firebase cloud services.",
+    href: "https://www.wellbee.app/",
+    texture: "/models/textures/project/p6.mp4",
+    logo: "/assets/Wellbee.png",
     logoStyle: {
       backgroundColor: "#0E1F38",
       border: "0.2px solid #0E2D58",
@@ -174,20 +180,21 @@ export const myProjects = [
         name: "React.js",
         path: "/assets/react.svg",
       },
+
       {
         id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
-      },
-      {
-        id: 3,
         name: "TypeScript",
         path: "/assets/typescript.png",
       },
       {
+        id: 3,
+        name: "NodeJS",
+        path: "assets/node.png",
+      },
+      {
         id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
+        name: "React Native",
+        path: "/assets/React-Native.jpg",
       },
     ],
   },
@@ -231,32 +238,63 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: "Framer",
-    pos: "Lead Web Developer",
-    duration: "2022 - Present",
+    name: "NORTHVOLT",
+    pos: "PROCESS TECHNICAL OPERATOR",
+    duration: "2023 - Present",
     title:
-      "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-    icon: "/assets/framer.svg",
-    animation: "victory",
-  },
-  {
-    id: 2,
-    name: "Figma",
-    pos: "Web Developer",
-    duration: "2020 - 2022",
-    title:
-      "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: "/assets/figma.svg",
+      "Diagnose and troubleshoot mechanical, hardware, and software issues on high-tech machinery, utilizing P&IDs, technical manuals, and keen attention to detail to resolve technical problems while performing risk analysis and issuing permits in compliance with safety protocols.",
+    icon: "/assets/Northvolt_logo.svg",
     animation: "clapping",
   },
   {
-    id: 3,
-    name: "Notion",
-    pos: "Junior Web Developer",
-    duration: "2019 - 2020",
+    id: 2,
+    name: "UPPSALA UNIVERISTY",
+    pos: "RESEARCH - ENSEMBLE MACHINE LEARNING TECHNIQUES FOR LORA-BASED WIRELESS INDOOR LOCALIZATION SYSTEMS",
+    duration: "2023 - 2024",
     title:
-      "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: "/assets/notion.svg",
+      "Researched ensemble machine learning techniques for LoRa-based wireless indoor localization, focusing on supervised machine learning techniques, IoT system implementation, and wireless signal processing. Utilized Python, MATLAB, IoT and Google Cloud to develop and optimize the system for improved localization accuracy.",
+    icon: "/assets/Uppsal.svg",
+    animation: "victory",
+    extra: "Research Paper",
+  },
+  {
+    id: 3,
+    name: "FROST",
+    pos: "SOFTWARE ENGINEER",
+    duration: "2023- 2022",
+    title:
+      "Worked as a Frontend Software Engineer, developing web and mobile applications using JavaScript, TypeScript, React JS, React Native, MobX, and Node JS. Contributed to Wellbee, a platform designed to assist individuals in need of cognitive support with everyday planning.",
+    icon: "/assets/frost1.svg",
     animation: "salute",
+  },
+  {
+    id: 4,
+    name: "INFORMATICS INTERNATIONAL LTD",
+    pos: "SOFTWARE ENGINEER",
+    duration: "2022- 2021",
+    title:
+      "A Full-Stack Software Engineer, developing modern and scalable enterprise-level insurance software solutions using JavaScript, TypeScript, React JS, Redux, Node.js, Express, GraphQL, RabbitMQ, and Apollo GraphQL. Contributed to InfoIns, a platform serving 15 countries worldwide.",
+    icon: "/assets/Informatics.svg",
+    animation: "clapping",
+  },
+  {
+    id: 5,
+    name: "CEYLON SYSTEMS (PVT) LTD",
+    pos: "ASSOCIATE SOFTWARE ENGINEER",
+    duration: "2016- 2018",
+    title:
+      "A Full-Stack Software Developer, building integrated, flexible, and scalable web solutions and mobile applications using ReactJS, Node.js, JavaScript, Bootstrap, Laravel, PHP, jQuery, WordPress, MySQL, HTML, CSS, and Sass. Contributed to Notify, an SMS gateway, campaign manager, and API provider in Sri Lanka.",
+    icon: "/assets/ceylonsystems.svg",
+    animation: "salute",
+  },
+  {
+    id: 6,
+    name: "EBEYONDS DIGITAL MARKETING",
+    pos: "WEB DEVELOPER",
+    duration: "2015- 2016",
+    title:
+      "Web Developer, creating integrated, flexible, and scalable web-enabled end-to-end software solutions for the hotel, tourism, and business industries using PHP, JavaScript, jQuery, MySQL, HTML, and CSS.",
+    icon: "/assets/ebeyonds_logo.svg",
+    animation: "clapping",
   },
 ];
