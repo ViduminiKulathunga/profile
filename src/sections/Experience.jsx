@@ -1,13 +1,17 @@
 import { Suspense, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-
+import { useMediaQuery } from "react-responsive";
 import Developer from "../components/Developer.jsx";
 import CanvasLoader from "../components/Loading.jsx";
 import { workExperiences } from "../constants/index.js";
 
 const WorkExperience = () => {
   const [animationName, setAnimationName] = useState("victory");
+
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
+  const isSamll = useMediaQuery({ maxWidth: 440 });
 
   return (
     <section className="c-space my-20" id="work">
@@ -25,7 +29,7 @@ const WorkExperience = () => {
               <Suspense fallback={<CanvasLoader />}>
                 <Developer
                   position-y={-3}
-                  scale={2.8}
+                  scale={isTablet ? 3.3 : isMobile ? 3.5 : 2.8}
                   animationName={animationName}
                 />
               </Suspense>

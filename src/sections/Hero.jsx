@@ -81,13 +81,13 @@ const Hero = () => {
             <PerspectiveCamera makeDefault position={[0, 1.5, 20]} />
             {/* <HeroCamera> */}
             <HackerRoom
-              scale={isTablet ? 8.7 : isMobile ? 8.7 : 5.6}
+              scale={isTablet ? 5 : isMobile ? 2.8 : 5.6}
               // scale={isTablet ? 8.7 : isMobile ? 8.7 : 13.6}
               position={
                 isTablet
-                  ? [0, 6.1, -2.1]
+                  ? [0, -7, -2.1]
                   : isMobile
-                  ? [0, 6.1, -2.1]
+                  ? [0, -2.8, -2.1]
                   : [0, -8, -3.1]
               }
               rotation={[0, Math.PI, 0]}
@@ -111,18 +111,45 @@ const Hero = () => {
             {/* </HeroCamera> */}
 
             <group>
-              <Target position={[-10, -2, -3]} />
-              <ReactLogo position={[0, 3, -3]} />
-              <Cube position={[10, 1, -3]} />
+              {!isMobile && (
+                <>
+                  <Target position={isTablet ? [-7, -2, -3] : [-10, -2, -3]} />
+                </>
+              )}
+              <ReactLogo
+                position={
+                  isTablet ? [0, 3, -3] : isMobile ? [0, 5, -3] : [0, 3, -3]
+                }
+              />
+              <Cube
+                position={
+                  isTablet ? [7, 1, -3] : isMobile ? [4.6, 1, -3] : [10, 1, -3]
+                }
+              />
               <Diamond
                 autoRotate
                 autoRotateSpeed={1}
                 minPolarAngle={0}
                 maxPolarAngle={Math.PI / 2}
                 rotation={[0, 0, 0.715]}
-                position={[-9.1, 1.8 + 0.5, 0]}
+                position={
+                  isTablet
+                    ? [-4.8, 1.8 + 0.5, 0]
+                    : isMobile
+                    ? [-3.1, 1.8 + 0.5, 0]
+                    : [-9.1, 1.8 + 0.5, 0]
+                }
               />
-              <World scale={0.0105} position={[0, -3, -3.1]} />
+              <World
+                scale={isTablet ? 0.01 : isMobile ? 0.007 : 0.0105}
+                position={
+                  isTablet
+                    ? [0, -3, -3.1]
+                    : isMobile
+                    ? [0, 0, -3.1]
+                    : [0, -3, -3.1]
+                }
+              />
 
               {/* <Stars saturation={0} count={400} speed={0.2} /> */}
             </group>

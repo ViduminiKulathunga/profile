@@ -41,9 +41,9 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I’m Vidumini Kulathunga</p>
               <p className="grid-subtext">
-                With 6 years of experience, I have honed my skills in both
-                frontend and backend development, creating dynamic and
-                responsive websites.
+                A professional full-stack software engineer with overall 6 years
+                of experience in building modern, scalable, enterprise-level
+                applications.
               </p>
             </div>
           </div>
@@ -60,9 +60,9 @@ const About = () => {
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
-                I specialize in Typescript, Javascript with a focus on React,
-                Next.js and Node JS, that allow me to build robust and scalable
-                applications.
+                I specialize in JavaScript, TypeScript, React, React Native,
+                Node.js, RabbitMQ, GraphQL, Python, IoT, and Google Cloud, with
+                a solid foundation in Agile/Scrum methodologies.
               </p>
             </div>
           </div>
