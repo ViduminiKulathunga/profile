@@ -24,12 +24,12 @@ const WorkExperience = () => {
               <ambientLight intensity={3} />
               <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
               <directionalLight position={[10, 7, 10]} intensity={1} />
-              <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />
+              {/* <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} /> */}
 
               <Suspense fallback={<CanvasLoader />}>
                 <Developer
                   position-y={-3}
-                  scale={isTablet ? 3.3 : isMobile ? 3.5 : 2.8}
+                  scale={isTablet ? 3.3 : isMobile ? 3.5 : 1.7}
                   animationName={animationName}
                 />
               </Suspense>

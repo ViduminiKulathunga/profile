@@ -33,7 +33,7 @@ const About = () => {
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img
-              src="/assets/10.jpeg"
+              src="/assets/vidu_1.jpeg"
               alt="grid-1"
               className="w-full c-image sm:h-[276px] h-fit object-contain"
             />
@@ -90,6 +90,7 @@ const About = () => {
                     size: 2000,
                   },
                 ]}
+                enablePointerInteraction={false}
               />
             </div>
             <div>
@@ -99,7 +100,13 @@ const About = () => {
               <p className="grid-subtext">
                 I&apos;m based in Uppsala, Sweden and open to work worldwide.
               </p>
-              <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+              <a href="#contact">
+                <Button
+                  name="Contact Me"
+                  isBeam
+                  containerClass="w-full mt-10"
+                />
+              </a>
             </div>
           </div>
         </div>

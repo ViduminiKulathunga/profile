@@ -111,21 +111,21 @@ const Hero = () => {
             {/* </HeroCamera> */}
 
             <group>
-              {!isMobile && (
+              {/* {!isMobile && (
                 <>
                   <Target position={isTablet ? [-7, -2, -3] : [-10, -2, -3]} />
                 </>
-              )}
+              )} */}
               <ReactLogo
                 position={
                   isTablet ? [0, 3, -3] : isMobile ? [0, 5, -3] : [0, 3, -3]
                 }
               />
-              <Cube
+              {/* <Cube
                 position={
                   isTablet ? [7, 1, -3] : isMobile ? [4.6, 1, -3] : [10, 1, -3]
                 }
-              />
+              /> */}
               <Diamond
                 autoRotate
                 autoRotateSpeed={1}
