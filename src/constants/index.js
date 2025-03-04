@@ -238,16 +238,6 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: "NORTHVOLT",
-    pos: "PROCESS TECHNICAL OPERATOR",
-    duration: "2023 - Present",
-    title:
-      "Diagnose and troubleshoot mechanical, hardware, and software issues on high-tech machinery, utilizing P&IDs, technical manuals, and keen attention to detail to resolve technical problems while performing risk analysis and issuing permits in compliance with safety protocols.",
-    icon: "/assets/Northvolt_logo.svg",
-    animation: "clapping",
-  },
-  {
-    id: 2,
     name: "UPPSALA UNIVERISTY",
     pos: "RESEARCH - ENSEMBLE MACHINE LEARNING TECHNIQUES FOR LORA-BASED WIRELESS INDOOR LOCALIZATION SYSTEMS",
     duration: "2023 - 2024",
@@ -258,7 +248,7 @@ export const workExperiences = [
     extra: "Research Paper",
   },
   {
-    id: 3,
+    id: 2,
     name: "FROST",
     pos: "SOFTWARE ENGINEER",
     duration: "2023- 2022",
@@ -268,7 +258,7 @@ export const workExperiences = [
     animation: "salute",
   },
   {
-    id: 4,
+    id: 3,
     name: "INFORMATICS INTERNATIONAL LTD",
     pos: "SOFTWARE ENGINEER",
     duration: "2022- 2021",
@@ -278,7 +268,7 @@ export const workExperiences = [
     animation: "clapping",
   },
   {
-    id: 5,
+    id: 4,
     name: "CEYLON SYSTEMS (PVT) LTD",
     pos: "ASSOCIATE SOFTWARE ENGINEER",
     duration: "2016- 2018",
@@ -288,7 +278,7 @@ export const workExperiences = [
     animation: "salute",
   },
   {
-    id: 6,
+    id: 5,
     name: "EBEYONDS DIGITAL MARKETING",
     pos: "WEB DEVELOPER",
     duration: "2015- 2016",

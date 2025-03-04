@@ -6,13 +6,11 @@ import CanvasLoader from "../components/CanvasLoader";
 import { Leva, useControls } from "leva";
 import { useMediaQuery } from "react-responsive";
 import { calculateSizes } from "../constants";
-import Target from "../components/Target";
 import ReactLogo from "../components/ReactLogo";
-import Cube from "../components/Cube";
 import Diamond from "../components/Diamond";
 import { OrbitControls } from "@react-three/drei";
 import World from "../components/World";
-import HeroCamera from "../components/HeroCamera";
+
 import Button from "../components/Button";
 
 const Hero = () => {
@@ -66,9 +64,7 @@ const Hero = () => {
         <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">
           Hi, I am Vidumini Kulathunga <span className="waving-hand">👋</span>
         </p>
-        <p className="hero_tag text-gray_gradient">
-          Building Products & Brands
-        </p>
+        <p className="hero_tag text-gray_gradient">Sofware Developer</p>
       </div>
 
       <div className="w-full h-full absolute inset-0">
@@ -79,7 +75,7 @@ const Hero = () => {
         >
           <Suspense fallback={<CanvasLoader />}>
             <PerspectiveCamera makeDefault position={[0, 1.5, 20]} />
-            {/* <HeroCamera> */}
+
             <HackerRoom
               scale={isTablet ? 5 : isMobile ? 2.8 : 5.6}
               // scale={isTablet ? 8.7 : isMobile ? 8.7 : 13.6}
@@ -108,24 +104,14 @@ const Hero = () => {
               //   controls.rotationZ,
               // ]}
             />
-            {/* </HeroCamera> */}
 
             <group>
-              {/* {!isMobile && (
-                <>
-                  <Target position={isTablet ? [-7, -2, -3] : [-10, -2, -3]} />
-                </>
-              )} */}
               <ReactLogo
                 position={
                   isTablet ? [0, 3, -3] : isMobile ? [0, 5, -3] : [0, 3, -3]
                 }
               />
-              {/* <Cube
-                position={
-                  isTablet ? [7, 1, -3] : isMobile ? [4.6, 1, -3] : [10, 1, -3]
-                }
-              /> */}
+
               <Diamond
                 autoRotate
                 autoRotateSpeed={1}
@@ -150,8 +136,6 @@ const Hero = () => {
                     : [0, -3, -3.1]
                 }
               />
-
-              {/* <Stars saturation={0} count={400} speed={0.2} /> */}
             </group>
 
             <ambientLight intensity={7} />
